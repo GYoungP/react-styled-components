@@ -1,26 +1,20 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
+import Button from './conponents/Button'
 
-const Circle = styled.div`
-  width: 5rem;
-  height: 5rem;
-  background: ${props => props.color};
-  border-radius: 50%;
-  ${props => 
-  props.huge && 
-  css`
-  
-    width:10rem;
-    height: 10rem;
-  `}
+
+const AppBlock = styled.div`
+  width: 512px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 1rem;
 `
 
 function App() {
   return (
-    <>
-      <Circle color='blue' />
-      <Circle color='blue' huge/>
-    </>
+    <AppBlock>
+      <Button>BUTTON</Button>
+    </AppBlock>
   );
 }
 
